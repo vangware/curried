@@ -1,0 +1,4 @@
+/**
+ * Day of week values (0-6).
+ */
+export type DayOfWeek = 0 | 1 | 2 | 3 | 4 | 5 | 6;
