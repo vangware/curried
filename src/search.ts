@@ -4,6 +4,7 @@ import { instanceOfRegExp } from "./instanceOfRegExp";
 /**
  * Finds the first substring match in a regular expression or string search.
  *
+ * @category RegExp
  * @category String
  * @example
  * ```typescript

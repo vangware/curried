@@ -105,6 +105,7 @@ export { split } from "./split";
 export { startsWith } from "./startsWith";
 export { substr } from "./substr";
 export { substring } from "./substring";
+export { test } from "./test";
 export { then } from "./then";
 export { toISOString } from "./toISOString";
 export { toLocaleDateString } from "./toLocaleDateString";

@@ -5,6 +5,7 @@ import { createRegExp } from "./createRegExp";
  * returns an array containing the results of that search, or null if no matches
  * are found.
  *
+ * @category RegExp
  * @category String
  * @example
  * ```typescript

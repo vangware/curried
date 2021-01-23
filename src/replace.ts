@@ -5,6 +5,7 @@ import { instanceOfRegExp } from "./instanceOfRegExp";
  * Replaces text in a string, using an object that supports replacement within
  * a string.
  *
+ * @category RegExp
  * @category String
  * @example
  * ```typescript
