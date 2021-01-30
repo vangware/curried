@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.3
+
+- :arrow_up: dependency upgrade.
+- :sparkles: add missing `toExponential` and `toFixed` utils.
+- :sparkles: add `EntryOf` type.
+
 ## 1.0.2
 
 - :building_construction: change generic types to be configurable.

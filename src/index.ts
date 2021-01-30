@@ -107,6 +107,8 @@ export { substr } from "./substr";
 export { substring } from "./substring";
 export { test } from "./test";
 export { then } from "./then";
+export { toExponential } from "./toExponential";
+export { toFixed } from "./toFixed";
 export { toISOString } from "./toISOString";
 export { toLocaleDateString } from "./toLocaleDateString";
 export { toLocaleLowerCase } from "./toLocaleLowerCase";

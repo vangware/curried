@@ -2700,6 +2700,9 @@ img {
 		<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 			<a href="modules.html#entry" class="tsd-kind-icon">Entry</a>
 		</li>
+		<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+			<a href="modules.html#entryof" class="tsd-kind-icon">Entry<wbr>Of</a>
+		</li>
 		<li class=" tsd-kind-type-alias">
 			<a href="modules.html#eraformat" class="tsd-kind-icon">Era<wbr>Format</a>
 		</li>
@@ -2711,6 +2714,9 @@ img {
 		</li>
 		<li class=" tsd-kind-type-alias">
 			<a href="modules.html#formatmatcher" class="tsd-kind-icon">Format<wbr>Matcher</a>
+		</li>
+		<li class=" tsd-kind-type-alias">
+			<a href="modules.html#fractiondigits" class="tsd-kind-icon">Fraction<wbr>Digits</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 			<a href="modules.html#genericarray" class="tsd-kind-icon">Generic<wbr>Array</a>
@@ -3253,6 +3259,12 @@ img {
 			<a href="modules.html#then" class="tsd-kind-icon">then</a>
 		</li>
 		<li class=" tsd-kind-function">
+			<a href="modules.html#toexponential" class="tsd-kind-icon">to<wbr>Exponential</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="modules.html#tofixed" class="tsd-kind-icon">to<wbr>Fixed</a>
+		</li>
+		<li class=" tsd-kind-function">
 			<a href="modules.html#toisostring" class="tsd-kind-icon">toISOString</a>
 		</li>
 		<li class=" tsd-kind-function">
@@ -3358,10 +3370,12 @@ img {
 							<li class="tsd-kind-type-alias"><a href="modules.html#dayofweek" class="tsd-kind-icon">Day<wbr>OfWeek</a></li>
 							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#entries" class="tsd-kind-icon">Entries</a></li>
 							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#entry" class="tsd-kind-icon">Entry</a></li>
+							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#entryof" class="tsd-kind-icon">Entry<wbr>Of</a></li>
 							<li class="tsd-kind-type-alias"><a href="modules.html#eraformat" class="tsd-kind-icon">Era<wbr>Format</a></li>
 							<li class="tsd-kind-type-alias"><a href="modules.html#falsy" class="tsd-kind-icon">Falsy</a></li>
 							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#filterer" class="tsd-kind-icon">Filterer</a></li>
 							<li class="tsd-kind-type-alias"><a href="modules.html#formatmatcher" class="tsd-kind-icon">Format<wbr>Matcher</a></li>
+							<li class="tsd-kind-type-alias"><a href="modules.html#fractiondigits" class="tsd-kind-icon">Fraction<wbr>Digits</a></li>
 							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#genericarray" class="tsd-kind-icon">Generic<wbr>Array</a></li>
 							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#genericconstructor" class="tsd-kind-icon">Generic<wbr>Constructor</a></li>
 							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#genericfunction" class="tsd-kind-icon">Generic<wbr>Function</a></li>
@@ -3560,6 +3574,11 @@ img {
 							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#getownpropertysymbols" class="tsd-kind-icon">get<wbr>Own<wbr>Property<wbr>Symbols</a></li>
 							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#keys" class="tsd-kind-icon">keys</a></li>
 							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#values" class="tsd-kind-icon">values</a></li>
+						</ul>
+						<h3>Other Functions</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-function"><a href="modules.html#toexponential" class="tsd-kind-icon">to<wbr>Exponential</a></li>
+							<li class="tsd-kind-function"><a href="modules.html#tofixed" class="tsd-kind-icon">to<wbr>Fixed</a></li>
 						</ul>
 						<h3>Promise Functions</h3>
 						<ul class="tsd-index-list">
@@ -3927,6 +3946,27 @@ img {
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+				<a name="entryof" class="tsd-anchor"></a>
+				<h3>Entry<wbr>Of</h3>
+				<div class="tsd-signature tsd-kind-icon">Entry<wbr>Of&lt;Source&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#entry" class="tsd-signature-type" data-tsd-kind="Type alias">Entry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">, </span><a href="modules.html#valueof" class="tsd-signature-type" data-tsd-kind="Type alias">ValueOf</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/vangware/curried/blob/main/src/types/EntryOf.ts#L8">types/EntryOf.ts:8</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Entry type of given Record.</p>
+					</div>
+				</div>
+				<h4 class="tsd-type-parameters-title">Type parameters</h4>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>Source<span class="tsd-signature-symbol">: </span><a href="modules.html#genericobject" class="tsd-signature-type" data-tsd-kind="Type alias">GenericObject</a></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-type-alias">
 				<a name="eraformat" class="tsd-anchor"></a>
 				<h3>Era<wbr>Format</h3>
@@ -3993,6 +4033,21 @@ img {
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Format matching algorithm.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias">
+				<a name="fractiondigits" class="tsd-anchor"></a>
+				<h3>Fraction<wbr>Digits</h3>
+				<div class="tsd-signature tsd-kind-icon">Fraction<wbr>Digits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">8</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">9</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">10</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">11</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">12</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">13</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">14</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">15</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">16</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">17</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">18</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">19</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">20</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/vangware/curried/blob/main/src/types/FractionDigits.ts#L4">types/FractionDigits.ts:4</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Fraction digits for exponential values (from 0 to 20).</p>
 					</div>
 				</div>
 			</section>
@@ -10546,6 +10601,129 @@ img {
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol"> extends </span><a href="modules.html#genericarray" class="tsd-signature-type" data-tsd-kind="Type alias">GenericArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-symbol">readonly </span><a href="modules.html#valueof" class="tsd-signature-type" data-tsd-kind="Type alias">ValueOf</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
 						<p>Array of values.</p>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Other Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="toexponential" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Exponential</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">to<wbr>Exponential<span class="tsd-signature-symbol">(</span>fractionDigits<span class="tsd-signature-symbol">: </span><a href="modules.html#fractiondigits" class="tsd-signature-type" data-tsd-kind="Type alias">FractionDigits</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/vangware/curried/blob/main/src/toExponential.ts#L17">toExponential.ts:17</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a string containing a number represented in exponential notation.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>example</dt>
+								<dd><pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">defaultToExponential</span><span style="color: #000000"> = </span><span style="color: #795E26">toExponential</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">toExponential1</span><span style="color: #000000"> = </span><span style="color: #795E26">toExponential</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">);</span>
+<span style="color: #795E26">defaultToExponential</span><span style="color: #000000">(</span><span style="color: #098658">100</span><span style="color: #000000">); </span><span style="color: #008000">// 1e+2</span>
+<span style="color: #795E26">toExponential1</span><span style="color: #000000">(</span><span style="color: #098658">100</span><span style="color: #000000">); </span><span style="color: #008000">// 1.0e+2</span>
+</code></pre>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>fractionDigits: <a href="modules.html#fractiondigits" class="tsd-signature-type" data-tsd-kind="Type alias">FractionDigits</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Number of digits after the decimal point. Must be in
+									the range 0 - 20, inclusive.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h4>
+						<p>Curried function with <code>fractionDigits</code> in closure.</p>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>source: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="tofixed" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Fixed</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">to<wbr>Fixed<span class="tsd-signature-symbol">(</span>fractionDigits<span class="tsd-signature-symbol">: </span><a href="modules.html#fractiondigits" class="tsd-signature-type" data-tsd-kind="Type alias">FractionDigits</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/vangware/curried/blob/main/src/toFixed.ts#L17">toFixed.ts:17</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a string representing a number in fixed-point notation.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>example</dt>
+								<dd><pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">defaultToFixed</span><span style="color: #000000"> = </span><span style="color: #795E26">toFixed</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">toFixed2</span><span style="color: #000000"> = </span><span style="color: #795E26">toFixed</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">);</span>
+<span style="color: #795E26">defaultToFixed</span><span style="color: #000000">(</span><span style="color: #098658">100</span><span style="color: #000000">); </span><span style="color: #008000">// 100</span>
+<span style="color: #795E26">toFixed2</span><span style="color: #000000">(</span><span style="color: #098658">100</span><span style="color: #000000">); </span><span style="color: #008000">// 100.00</span>
+</code></pre>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>fractionDigits: <a href="modules.html#fractiondigits" class="tsd-signature-type" data-tsd-kind="Type alias">FractionDigits</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Number of digits after the decimal point. Must be in
+									the range 0 - 20, inclusive.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h4>
+						<p>Curried function with <code>fractionDigits</code> in closure.</p>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>source: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
