@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.0
+
+- :sparkles: add `parseIntBinary` util.
+- :sparkles: add `parseIntDecimal` util.
+- :sparkles: add `parseIntHexadecimal` util.
+- :sparkles: add `parseIntOctal` util.
+- :sparkles: add `toStringBinary` util.
+- :sparkles: add `toStringDecimal` util.
+- :sparkles: add `toStringHexadecimal` util.
+- :sparkles: add `toStringOctal` util.
+- :arrow_up: dependency upgrade.
+
 ## 1.0.3
 
 - :arrow_up: dependency upgrade.
