@@ -1,7 +1,5 @@
 import type { GenericObject } from "./types/GenericObject";
-import type { PropertyAccessorDescriptor } from "./types/PropertyAccessorDescriptor";
 import type { PropertyDescriptor } from "./types/PropertyDescriptor";
-import type { PropertyValueDescriptor } from "./types/PropertyValueDescriptor";
 
 /**
  * Returns an object containing all own property descriptors of an object.
@@ -28,7 +26,5 @@ export const getOwnPropertyDescriptors = <Source extends GenericObject>(
 	Object.getOwnPropertyDescriptors(source) as {
 		readonly [Key in keyof Source extends string | number
 			? keyof Source
-			: never]: Required<PropertyDescriptor<Source[Key]>> &
-			Partial<PropertyValueDescriptor<Source[Key]>> &
-			Partial<PropertyAccessorDescriptor<Source[Key]>>;
+			: never]: PropertyDescriptor<Source[Key]>;
 	};

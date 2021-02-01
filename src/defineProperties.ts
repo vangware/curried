@@ -24,7 +24,7 @@ import type { PropertyValueDescriptor } from "./types/PropertyValueDescriptor";
  * @returns Curried function with `descriptors` in closure.
  */
 export const defineProperties = <
-	Descriptors extends Record<string, PropertyDescriptor>
+	Descriptors extends Record<string, Partial<PropertyDescriptor>>
 >(
 	descriptors: Descriptors
 ) =>

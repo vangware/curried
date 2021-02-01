@@ -1,3 +1,6 @@
+/**
+ * Possible timezone values.
+ */
 export type TimeZone =
 	| `Africa/${
 			| "Abidjan"
@@ -294,10 +297,10 @@ export type TimeZone =
 			| "Vientiane"
 			| "Vladivostok"
 			| "Yakutsk"
+			// eslint-disable-next-line max-lines
 			| "Yangon"
 			| "Yekaterinburg"
 			| "Yerevan"}`
-	// eslint-disable-next-line max-lines
 	| `Atlantic/${
 			| "Azores"
 			| "Bermuda"

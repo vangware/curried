@@ -1,8 +1,6 @@
 import type { GenericObject } from "./types/GenericObject";
 import type { Nullish } from "./types/Nullish";
-import type { PropertyAccessorDescriptor } from "./types/PropertyAccessorDescriptor";
 import type { PropertyDescriptor } from "./types/PropertyDescriptor";
-import type { PropertyValueDescriptor } from "./types/PropertyValueDescriptor";
 
 /**
  * Gets the own property descriptor of the specified object. An own property
@@ -36,6 +34,4 @@ export const getOwnPropertyDescriptor = <Property extends PropertyKey>(
 			property
 		) as Source[Property] extends Nullish
 			? undefined
-			: Required<PropertyDescriptor<Source[Property]>> &
-					Partial<PropertyValueDescriptor<Source[Property]>> &
-					Partial<PropertyAccessorDescriptor<Source[Property]>>;
+			: PropertyDescriptor<Source[Property]>;

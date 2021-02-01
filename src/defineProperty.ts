@@ -17,7 +17,7 @@ import type { PropertyValueDescriptor } from "./types/PropertyValueDescriptor";
  * @param descriptor Property descriptor function.
  * @returns Curried function with `descriptor` in closure.
  */
-export const defineProperty = <Descriptor extends PropertyDescriptor>(
+export const defineProperty = <Descriptor extends Partial<PropertyDescriptor>>(
 	descriptor: Descriptor
 ) =>
 	/**

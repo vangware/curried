@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.1
+
+- :bug: fix bad types for `getOwnPropertyDescriptor`.
+
 ## 1.1.0
 
 - :sparkles: add `parseIntBinary` util.
