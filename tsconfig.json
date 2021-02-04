@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "alwaysStrict": true,
     "declaration": true,
+    "esModuleInterop": true,
+    "extendedDiagnostics": true,
     "forceConsistentCasingInFileNames": true,
-    "listEmittedFiles": true,
+    "importsNotUsedAsValues": "error",
     "module": "CommonJS",
     "moduleResolution": "node",
     "newLine": "LF",

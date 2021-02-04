@@ -3,6 +3,7 @@ import type { FractionDigits } from "./types/FractionDigits";
 /**
  * Returns a string containing a number represented in exponential notation.
  *
+ * @category Number
  * @example
  * ```typescript
  * const defaultToExponential = toExponential(0);

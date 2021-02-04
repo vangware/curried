@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.2
+
+- :arrow_up: dependency upgrade.
+- :wrench: improved `tsconfig.json`.
+
 ## 1.1.1
 
 - :bug: fix bad types for `getOwnPropertyDescriptor`.

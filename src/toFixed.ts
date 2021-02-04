@@ -3,6 +3,7 @@ import type { FractionDigits } from "./types/FractionDigits";
 /**
  * Returns a string representing a number in fixed-point notation.
  *
+ * @category Number
  * @example
  * ```typescript
  * const defaultToFixed = toFixed(0);

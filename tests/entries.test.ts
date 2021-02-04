@@ -1,6 +1,6 @@
 import { suite } from "@vangware/test";
-import { Entries } from "../src";
 import { entries } from "../src/entries";
+import type { Entries } from "../src/types/Entries";
 
 const key = "key";
 const value = "value";
