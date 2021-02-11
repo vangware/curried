@@ -18,11 +18,7 @@ export const includes = <Item>(item: Item) =>
 	 * @param source Source array or string to search in.
 	 * @returns True when `source` has `item`, false when not.
 	 */
-	(
-		source: Item extends string
-			? readonly string[] | string
-			: readonly Item[]
-	) =>
+	(source: readonly Item[] | string) =>
 		source.includes(
 			(Array.isArray(source) ? item : `${item}`) as string & Item
 		);

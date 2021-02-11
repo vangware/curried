@@ -18,11 +18,7 @@ export const indexOf = <Item>(item: Item) =>
 	 * @returns Index of the first occurrence of `item` in `source`, -1 when
 	 * missing.
 	 */
-	(
-		source: Item extends string
-			? readonly string[] | string
-			: readonly Item[]
-	) =>
+	(source: string | readonly Item[]) =>
 		source.indexOf(
 			(Array.isArray(source) ? item : `${item}`) as string & Item
 		);
