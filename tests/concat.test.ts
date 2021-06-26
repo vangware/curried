@@ -4,7 +4,7 @@ import { concat } from "../src/concat";
 const concatNumbers = concat([0, 1, 2, 3, 4]);
 const concatBar = concat("bar");
 
-export default suite<readonly (string | number)[] | string>([
+export default suite<ReadonlyArray<number | string> | string>([
 	{
 		given: "an array of numbers an an array of strings",
 		must: "return array of numbers concatenated into the array of strings",

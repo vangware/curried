@@ -6,7 +6,7 @@ const key = "key";
 const value = "value";
 const array = [key, value];
 
-export default suite<Entries<string | number, string>>([
+export default suite<Entries<number | string, string>>([
 	{
 		given: "an object { key: value }",
 		must: "return an array of tuples [key, value]",

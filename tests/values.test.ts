@@ -4,7 +4,7 @@ import { values } from "../src/values";
 const array = ["foo", "bar", "baz", "foobar"];
 const object = { bar: "bar", foo: "foo" };
 
-export default suite<readonly (string | number)[]>([
+export default suite<ReadonlyArray<number | string>>([
 	{
 		given: "an array",
 		must: "return an array with the values of that array",

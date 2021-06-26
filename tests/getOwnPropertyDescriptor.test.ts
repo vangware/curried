@@ -9,10 +9,14 @@ export default suite([
 		must: "return property descriptor of foo",
 		received: getFooDescriptor({ foo: "bar" }),
 		wanted: {
-			configurable: true,
-			enumerable: true,
 			value: "bar",
-			writable: true
+			writable: true,
+			// TODO: Remove next comment when @vangware/test is updated
+			// eslint-disable-next-line sort-keys
+			enumerable: true,
+			// TODO: Remove next comment when @vangware/test is updated
+			// eslint-disable-next-line sort-keys
+			configurable: true
 		}
 	}
 ]);

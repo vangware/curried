@@ -20,8 +20,8 @@ export default suite([
 	},
 	{
 		given: "a string and a regular expression",
-		must:
-			"return the position of first match of given expression in string",
+		// eslint-disable-next-line max-len
+		must: "return the position of first match of given expression in string",
 		received: searchBarRegExp("foobar"),
 		wanted: 3
 	}

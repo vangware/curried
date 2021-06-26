@@ -14,6 +14,7 @@ const source = {
 };
 
 const bindContext = bind(context);
+// eslint-disable-next-line @typescript-eslint/unbound-method
 const boundExclaim = bindContext(source.exclaim);
 
 export default suite([

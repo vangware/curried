@@ -13,7 +13,7 @@ const array = [
 ];
 const arrayDeeper = [array, array];
 
-export default suite<readonly (number | readonly number[])[]>([
+export default suite<ReadonlyArray<ReadonlyArray<number> | number>>([
 	{
 		given: "an array of arrays and a depth of 1",
 		must: "return a flatMaptened array",

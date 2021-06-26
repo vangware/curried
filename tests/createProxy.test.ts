@@ -9,8 +9,8 @@ const fooProxy = createProxy({
 export default suite([
 	{
 		given: "a proxy that always returns foo and an object",
-		must:
-			"return proxy for given object which returns foo with any property",
+		// eslint-disable-next-line max-len
+		must: "return proxy for given object which returns foo with any property",
 		received: fooProxy({ bar: "bar" }).bar,
 		wanted: "foo"
 	}

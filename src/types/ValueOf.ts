@@ -5,6 +5,5 @@ import type { KeyOf } from "./KeyOf";
 /**
  * Generic key for either object or array.
  */
-export type ValueOf<
-	Source extends GenericArray | GenericObject
-> = Source[KeyOf<Source>];
+export type ValueOf<Source extends GenericArray | GenericObject> =
+	Source[KeyOf<Source>];

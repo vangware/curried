@@ -6,7 +6,7 @@ import type { Mapper } from "./Mapper";
  * @param accumulator Reducer accumulator.
  * @returns Mapper with accumulator context.
  */
-export type Reducer<Item, Output = readonly Item[]> = Mapper<
+export type Reducer<Item, Output = ReadonlyArray<Item>> = Mapper<
 	Item,
 	(accumulator: Output) => Output
 >;

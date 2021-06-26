@@ -2,6 +2,10 @@
  * Possible timezone values.
  */
 export type TimeZone =
+	| "Arctic/Longyearbyen"
+	| "Factory"
+	| "GMT"
+	| "UTC"
 	| `Africa/${
 			| "Abidjan"
 			| "Accra"
@@ -61,19 +65,6 @@ export type TimeZone =
 			| "Anguilla"
 			| "Antigua"
 			| "Araguaina"
-			| `Argentina/${
-					| "Buenos_Aires"
-					| "Catamarca"
-					| "Cordoba"
-					| "Jujuy"
-					| "La_Rioja"
-					| "Mendoza"
-					| "Rio_Gallegos"
-					| "Salta"
-					| "San_Juan"
-					| "San_Luis"
-					| "Tucuman"
-					| "Ushuaia"}`
 			| "Aruba"
 			| "Asuncion"
 			| "Atikokan"
@@ -120,20 +111,10 @@ export type TimeZone =
 			| "Halifax"
 			| "Havana"
 			| "Hermosillo"
-			| `Indiana/${
-					| "Indianapolis"
-					| "Knox"
-					| "Marengo"
-					| "Petersburg"
-					| "Tell_City"
-					| "Vevay"
-					| "Vincennes"
-					| "Winamac"}`
 			| "Inuvik"
 			| "Iqaluit"
 			| "Jamaica"
 			| "Juneau"
-			| `Kentucky/${"Louisville" | "Monticello"}`
 			| "Kralendijk"
 			| "La_Paz"
 			| "Lima"
@@ -160,7 +141,6 @@ export type TimeZone =
 			| "Nipigon"
 			| "Nome"
 			| "Noronha"
-			| `North_Dakota/${"Beulah" | "Center" | "New_Salem"}`
 			| "Nuuk"
 			| "Ojinaga"
 			| "Panama"
@@ -201,7 +181,31 @@ export type TimeZone =
 			| "Whitehorse"
 			| "Winnipeg"
 			| "Yakutat"
-			| "Yellowknife"}`
+			| "Yellowknife"
+			| `Argentina/${
+					| "Buenos_Aires"
+					| "Catamarca"
+					| "Cordoba"
+					| "Jujuy"
+					| "La_Rioja"
+					| "Mendoza"
+					| "Rio_Gallegos"
+					| "Salta"
+					| "San_Juan"
+					| "San_Luis"
+					| "Tucuman"
+					| "Ushuaia"}`
+			| `Indiana/${
+					| "Indianapolis"
+					| "Knox"
+					| "Marengo"
+					| "Petersburg"
+					| "Tell_City"
+					| "Vevay"
+					| "Vincennes"
+					| "Winamac"}`
+			| `Kentucky/${"Louisville" | "Monticello"}`
+			| `North_Dakota/${"Beulah" | "Center" | "New_Salem"}`}`
 	| `Antarctica/${
 			| "Casey"
 			| "Davis"
@@ -214,7 +218,6 @@ export type TimeZone =
 			| "Syowa"
 			| "Troll"
 			| "Vostok"}`
-	| "Arctic/Longyearbyen"
 	| `Asia/${
 			| "Aden"
 			| "Almaty"
@@ -294,10 +297,10 @@ export type TimeZone =
 			| "Ulaanbaatar"
 			| "Urumqi"
 			| "Ust-Nera"
+			// eslint-disable-next-line max-lines
 			| "Vientiane"
 			| "Vladivostok"
 			| "Yakutsk"
-			// eslint-disable-next-line max-lines
 			| "Yangon"
 			| "Yekaterinburg"
 			| "Yerevan"}`
@@ -325,24 +328,24 @@ export type TimeZone =
 			| "Perth"
 			| "Sydney"}`
 	| `Etc/${
+			| "UTC"
 			| `GMT${
-					| "-14"
-					| "-13"
-					| "-12"
-					| "-11"
-					| "-10"
-					| "-9"
-					| "-8"
-					| "-7"
-					| "-6"
-					| "-5"
-					| "-4"
-					| "-3"
-					| "-2"
-					| "-1"
 					| "-0"
+					| "-1"
+					| "-2"
+					| "-3"
+					| "-4"
+					| "-5"
+					| "-6"
+					| "-7"
+					| "-8"
+					| "-9"
+					| "-10"
+					| "-11"
+					| "-12"
+					| "-13"
+					| "-14"
 					| ""
-					| "0"
 					| "+0"
 					| "+1"
 					| "+2"
@@ -355,8 +358,8 @@ export type TimeZone =
 					| "+9"
 					| "+10"
 					| "+11"
-					| "+12"}`
-			| "UTC"}`
+					| "+12"
+					| "0"}`}`
 	| `Europe/${
 			| "Amsterdam"
 			| "Andorra"
@@ -419,8 +422,6 @@ export type TimeZone =
 			| "Zagreb"
 			| "Zaporozhye"
 			| "Zurich"}`
-	| "Factory"
-	| "GMT"
 	| `Indian/${
 			| "Antananarivo"
 			| "Chagos"
@@ -471,5 +472,4 @@ export type TimeZone =
 			| "Tarawa"
 			| "Tongatapu"
 			| "Wake"
-			| "Wallis"}`
-	| "UTC";
+			| "Wallis"}`;
